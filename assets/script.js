@@ -28,9 +28,7 @@
 
   // Blog posts (edit/add here)
   const posts = [
-    { title: "How I Outline Without Killing the Fun", date: "2025-08-17", url: "./posts/first-post.html", tag: "Process", excerpt: "My 5-step outline that leaves space for surprise."},
-    { title: "Tech x Fiction: Using Tools Without Losing Voice", date: "2025-08-17", url: "./posts/second-post.html", tag: "Craft", excerpt: "Notes on using AI and apps as a creative assistant—not a crutch."},
-    { title: "What a Scary Mirror Taught Me About Regret", date: "2025-08-17", url: "./posts/third-post.html", tag: "Inspiration", excerpt: "A personal essay that became the seed for a novel."}
+    { title: "Last Without Anything", date: "26-04-2023", url: "./posts/first-post.html", tag: "Short Story", excerpt: "How did she disappear?."},
   ];
 
   function postCard(p){ return `
