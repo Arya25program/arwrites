@@ -38,7 +38,6 @@
       <a href="#home">Home</a>
       <a href="#book">Book</a>
       <a href="#blog">Blog</a>
-      <a href="#newsletter">Newsletter</a>
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark theme">🌓</button>
     </nav>
   </header>
@@ -67,8 +66,7 @@
       <div class="book__grid">
         <div class="book__cover">
           <div class="cover-art">
-            <img src="assets/mirrorsdontlie.jpg" alt="Mirrors Don’t Lie book cover" width="200" height="300" />
-            <span>Mirrors Don’t Lie</span>
+            <img src="assets/mirrorsdontlie.jpg" alt="Mirrors Don’t Lie book cover"/>
           </div>
         </div>
         <div class="book__details">
@@ -82,7 +80,6 @@
           <div class="cta-row">
             <!-- Replace the href with your real Amazon product URL -->
             <a class="btn btn-amazon" href="https://www.amazon.in/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="btn btn-outline" href="#newsletter">Get a free chapter</a>
           </div>
         </div>
       </div>
@@ -97,20 +94,6 @@
         <a class="view-all" href="./posts/">View all posts →</a>
       </div>
       <div id="blogGrid" class="blog__grid" aria-live="polite"></div>
-    </section>
-
-    <section id="newsletter" class="newsletter">
-      <div class="newsletter__card">
-        <h2>Join the newsletter</h2>
-        <p>Monthly(ish) notes on writing, process, and behind-the-scenes. No spam. Unsubscribe anytime.</p>
-        <form id="subscribeForm" class="form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label for="email" class="sr-only">Email address</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
-          <button class="btn btn-primary" type="submit">Subscribe</button>
-          <p id="formMsg" class="form__msg" role="status" aria-live="polite"></p>
-        </form>
-        <small class="privacy">By subscribing you agree to the <a href="#privacy">privacy policy</a>.</small>
-      </div>
     </section>
   </main>
 
