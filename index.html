@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arya Ramachandran — Author</title>
+  <meta name="description" content="Official site of author Arya Ramachandran. Read the blog, explore books, and subscribe to the newsletter." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" href="./assets/logo.svg">
+  <meta property="og:title" content="Arya Ramachandran — Author" />
+  <meta property="og:description" content="Stories, notes, and the latest book by Arya." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arya Ramachandran",
+    "jobTitle": "Author",
+    "url": "https://example.com",
+    "sameAs": [],
+    "worksFor": { "@type": "Organization", "name": "Independent" }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <img src="./assets/logo.svg" alt="" width="28" height="28" />
+      <span>Arya<span class="accent">Writes</span></span>
+    </a>
+    <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#book">Book</a>
+      <a href="#blog">Blog</a>
+      <a href="#newsletter">Newsletter</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark theme">🌓</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero__copy">
+        <h1>Words that linger.<br><span class="accent">Stories that stay.</span></h1>
+        <p>Hi, I’m <strong>Arya</strong> — I write character-driven fiction and craft essays about creativity, tech, and the messy magic in-between.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#book">Explore my latest book</a>
+          <a class="btn btn-outline" href="#blog">Read the blog</a>
+        </div>
+      </div>
+      <div class="hero__card" role="img" aria-label="Decorative author card">
+        <div class="book-spine"></div>
+        <div class="book-cover">
+          <span class="book-kicker">New</span>
+          <h3>Mirrors Don’t Lie</h3>
+          <p>Paranormal reflections. Real regrets. One impossible choice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <div class="book__grid">
+        <div class="book__cover">
+          <div class="cover-art">
+            <img src="assets/mirrorsdontlie.jpg" alt="Mirrors Don’t Lie book cover" width="200" height="300" />
+            <span>Mirrors Don’t Lie</span>
+          </div>
+        </div>
+        <div class="book__details">
+          <h2>Featured Book — <span class="accent">Mirrors Don’t Lie</span></h2>
+          <p>A slow-burn paranormal thriller where reflections misbehave and guilt bends reality. If you like grounded sci-fi with heart and a twist of dread, this is for you.</p>
+          <ul class="book__bullets">
+            <li>Genre: Paranormal thriller, speculative</li>
+            <li>Length: ~280 pages</li>
+            <li>Formats: Kindle & Paperback</li>
+          </ul>
+          <div class="cta-row">
+            <!-- Replace the href with your real Amazon product URL -->
+            <a class="btn btn-amazon" href="https://www.amazon.in/" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn btn-outline" href="#newsletter">Get a free chapter</a>
+          </div>
+        </div>
+      </div>
+      <div class="rating-strip" aria-label="Reader satisfaction indicator">
+        ★★★★★ Early readers say it's 'eerie, elegant, and unputdownable.'
+      </div>
+    </section>
+
+    <section id="blog" class="blog">
+      <div class="section-heading">
+        <h2>Latest from the <span class="accent">Blog</span></h2>
+        <a class="view-all" href="./posts/">View all posts →</a>
+      </div>
+      <div id="blogGrid" class="blog__grid" aria-live="polite"></div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <div class="newsletter__card">
+        <h2>Join the newsletter</h2>
+        <p>Monthly(ish) notes on writing, process, and behind-the-scenes. No spam. Unsubscribe anytime.</p>
+        <form id="subscribeForm" class="form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          <p id="formMsg" class="form__msg" role="status" aria-live="polite"></p>
+        </form>
+        <small class="privacy">By subscribing you agree to the <a href="#privacy">privacy policy</a>.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Arya Ramachandran. All rights reserved.</p>
+    <div class="social">
+      <a href="https://x.com/" aria-label="X profile">X</a>
+      <a href="https://instagram.com/" aria-label="Instagram profile">Instagram</a>
+      <a href="mailto:hello@example.com" aria-label="Email Arya">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal JSON-LD Book schema
+    const bookSchema = {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Mirrors Don’t Lie",
+      "author": { "@type": "Person", "name": "Arya Ramachandran" },
+      "bookFormat": "EBook",
+      "publisher": "Independent",
+      "datePublished": "2025-01-15",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.amazon.in/",
+        "priceCurrency": "INR"
+      }
+    };
+    const ld = document.createElement('script');
+    ld.type = 'application/ld+json';
+    ld.textContent = JSON.stringify(bookSchema);
+    document.head.appendChild(ld);
+  </script>
+  <script src="./assets/script.js" defer></script>
+</body>
+</html>
