@@ -7,8 +7,6 @@
   const yearEl = document.getElementById('year');
   const themeToggle = document.getElementById('themeToggle');
   const blogGrid = document.getElementById('blogGrid');
-  const subscribeForm = document.getElementById('subscribeForm');
-  const formMsg = document.getElementById('formMsg');
 
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -44,31 +42,5 @@
     </article>`; }
 
   if(blogGrid){ blogGrid.innerHTML = posts.map(postCard).join(''); }
-
-  // Newsletter form — now hooked to Google Sheets
-  if(subscribeForm) subscribeForm.addEventListener('submit', async (e) => { 
-    e.preventDefault();
-    const form = e.currentTarget;
-    const name = form.name ? form.name.value.trim() : "";
-    const email = form.email.value.trim();
-    if(!email) return;
-
-    try { 
-      const res = await fetch("https://script.google.com/macros/s/AKfycbzvgdAZCID63sHiAeIWof1ME0G9FzMuzfir4DD9FvPM5jLhsAsD1ViyBhIhfjytvarfrw/exec", {
-        method: "POST",
-        body: JSON.stringify({ name, email }),
-        headers: { "Content-Type": "application/json" }
-      });
-
-      if(res.ok){ 
-        form.reset(); 
-        if(formMsg) formMsg.textContent = "✅ Thanks for subscribing! Check your inbox soon."; 
-      } else { 
-        if(formMsg) formMsg.textContent = "⚠️ Something went wrong. Try again."; 
-      }
-    } catch(err){ 
-      if(formMsg) formMsg.textContent = "❌ Network error. Please try again."; 
-    }
-  });
 
 })();
