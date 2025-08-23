@@ -29,8 +29,8 @@
   // Blog posts (edit/add here)
   const posts = [
     { title: "Last Without Anything", date: "26-04-2023", url: "./posts/first-post.html", tag: "Short Story", excerpt: "How did she disappear?."},
-    { title: "Our Autistic Kid", date: "29-02-2024", url: "./posts/second-post.html", tag: "Short Story", excerpt: "How did he behave?."}
-    { title: "Shenanigans Ending the year", date: "15-06-2024", url: "./posts/third-post.html", tag: "Short Story", excerpt: "How did the year end?."};
+    { title: "Our Autistic Kid", date: "29-02-2024", url: "./posts/second-post.html", tag: "Short Story", excerpt: "How did he behave?."},
+    { title: "Shenanigans Ending the year", date: "15-06-2024", url: "./posts/third-post.html", tag: "Short Story", excerpt: "How did the year end?."}
   ];
 
   function postCard(p){ return `
