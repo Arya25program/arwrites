@@ -30,7 +30,8 @@
   const posts = [
     { title: "Last Without Anything", date: "2023-04-26", url: "./posts/first-post.html", tag: "Short Story", excerpt: "How did she disappear?."},
     { title: "Our Autistic Kid", date: "2024-02-29", url: "./posts/second-post.html", tag: "Short Story", excerpt: "How did he behave?."},
-    { title: "Shenanigans Ending the year", date: "2024-06-15", url: "./posts/third-post.html", tag: "Short Story", excerpt: "How did the year it end?."}
+    { title: "Shenanigans Ending the year", date: "2024-06-15", url: "./posts/third-post.html", tag: "Short Story", excerpt: "How did the year it end?."},
+    { title: "Simpli", date: "2024-06-15", url: "./posts/four-post.html", tag: "Short Story", excerpt: "Simp?."}
   ];
 
 

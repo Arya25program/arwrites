@@ -129,7 +129,7 @@ a:hover{ text-decoration: underline; }
 .section-heading{ display:flex; align-items:baseline; justify-content:space-between; gap: 16px; margin-bottom: 12px; }
 .view-all{ font-size: 14px; color: var(--muted); }
 .blog__grid{
-  display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px;
+  display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px;
 }
 .card{
   background: var(--card); border:1px solid var(--border); border-radius: 14px; padding: 16px; display:flex; flex-direction:column; gap:10px;
