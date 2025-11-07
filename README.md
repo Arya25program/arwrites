@@ -1,6 +1,6 @@
 # 📚 Author Website – Arya Ramachandran
 
-This is the official repository for my **personal author webpage**, a digital home for my writing, books, and projects.  
+This is the official repository for my **personal author website**, a digital home for my writing, books, and projects.  
 The website is designed to serve as my **author brand hub** — connecting readers with my work and offering updates on upcoming stories.
 
 ---
