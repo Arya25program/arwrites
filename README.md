@@ -15,7 +15,7 @@ The website is designed to serve as my **author brand hub** — connecting reade
 
 ## 🚀 Tech Stack
 - HTML5, CSS3, JavaScript  
-- [Add framework/library if used, e.g., React, Next.js, Tailwind CSS]  
+- [Add framework/library if used, e.g., React, CSS]  
 - Hosted on [platform, e.g., GitHub Pages / Netlify / Vercel]  
 
 ---
